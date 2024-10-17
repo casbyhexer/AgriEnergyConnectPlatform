@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron text-center bg-dark text-white">
+    <h1 class="display-4">Welcome to Agri-Energy Connect Platform</h1>
+    <p class="lead">The aim of the Agri-Energy Connect Platform is about breaking the divide between South African suppliers of green energy technologies and the agricultural sector.</p>
+    <p> The original green revolution transformed agriculture by introducing new technologies. Today's green energy revolution poses new challenges for farmers.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Farmers</div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage Your Products</h5>
+                    <p class="card-text">Farmers can add products to their profiles and view their own product listings.</p>
+                    <a href="@Url.Action("Index", "Farmers")" class="btn btn-primary">Go to Farmers</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">Employees</div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage Farmers and Products</h5>
+                    <p class="card-text">Employees can add new farmer profiles, view all their products from specific farmers, and use filters for product searching.</p>
+                    <a href="@Url.Action("Index", "Employees")" class="btn btn-primary">Go to Employees</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

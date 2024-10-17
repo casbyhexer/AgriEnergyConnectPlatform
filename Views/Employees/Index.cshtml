@@ -1,0 +1,33 @@
+﻿@model IEnumerable<AgriEnergyConnectPlatform.Models.Entities.Farmers>
+
+<div class="card">
+    <div class="card-header">
+        <h2>Farmers and Their Products</h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th>Farmer Name</th>
+                    <th>Location</th>
+                    <th>Number</th>
+                    <th>Products</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var farmer in Model)
+                {
+                    <tr>
+                        <td>@farmer.Name</td>
+                        <td>@farmer.Location</td>
+                        <td>@farmer.Number</td>
+                        <td>
+                            <a class="btn btn-primary" href="@Url.Action("ViewFarmerProducts", new { farmerId = farmer.FarmerID })">View Products</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="@Url.Action("AddFarmer")">Add Farmer</a>
+    </div>
+</div>
