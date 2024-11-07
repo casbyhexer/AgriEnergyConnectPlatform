@@ -9,19 +9,6 @@ Below is the link for Agri Energy Connect Platform
       "applicationUrl": "https://localhost:7012;http://localhost:5267",
 
       Agri-Energy Connect Platform User Manual
-Table of Contents
-Introduction
-System Requirements
-Installation
-Configuration
-Running the Application
-User Roles and Permissions
-Features and Usage
-Farmer Features
-Employee Features
-Seeding Initial Data
-Updating the Database
-Troubleshooting
 
 Introduction
 The Agri-Energy Connect Platform aims to bridge the gap between South African suppliers of green energy technologies and the agricultural sector. The platform enables farmers to manage their products and employees to manage farmer profiles and view products.
