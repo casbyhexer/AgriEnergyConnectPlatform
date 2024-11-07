@@ -10,31 +10,31 @@ Below is the link for Agri Energy Connect Platform
 
       Agri-Energy Connect Platform User Manual
 
-Introduction
+Introduction:
 The Agri-Energy Connect Platform aims to bridge the gap between South African suppliers of green energy technologies and the agricultural sector. The platform enables farmers to manage their products and employees to manage farmer profiles and view products.
 
-System Requirements
-.NET 6.0 SDK or later
-SQLite database
+System Requirements:
+.NET 6.0 SDK or later,
+SQLite database,
 Visual Studio 2019 or later / Visual Studio Code
 
-Installation
-Clone the Repository
-Install Dependencies  
-Build the Project
-Open appsettings.json and configure the SQLite connection string
-Ensure Migrations are Up to Date
-Run the Application
+Installation:
+Clone the Repository,
+Install Dependencies,  
+Build the Project,
+Open appsettings.json and configure the SQLite connection string,
+Ensure Migrations are Up to Date,
+Run the Application,
 Open a web browser and navigate to the link
 
-User Roles and Permissions
+User Roles and Permissions:
 Farmer: Can add products to their profile and view their own product listings.
 Employee: Can add new farmer profiles, view all products from specific farmers, and use filters for product searching.
 
-Features and Usage
-Farmer Features:
-Dashboard:
-View your products.
+Features and Usage:
+Farmer Features,
+Dashboard,
+View your products,
 Add new products.
 
 Navigation:
@@ -44,9 +44,9 @@ Add Product:
 Navigate to "Farmers > Add Product."
 Fill in product details and click "Add Product."
 
-Employee Features
-Dashboard:
-View all farmers and their products.
+Employee Features:
+Dashboard,
+View all farmers and their products,
 Add new farmer profiles.
 
 Navigation:
@@ -61,15 +61,15 @@ Search Products:
 Navigate to "Employees > Search Products."
 Enter search criteria and click "Search."
 
-Seeding Initial Data
-Create the Data Initializer Interface and Implementation:
-IDataInitializer.cs:
-Register Data Initializer in Program.cs:
-Updating the Database
-Add Migration:
+Seeding Initial Data:
+Create the Data Initializer Interface and Implementation,
+IDataInitializer.cs,
+Register Data Initializer in Program.cs,
+Updating the Database,
+Add Migration,
 Update Database:
 
-Troubleshooting
+Troubleshooting:
 Missing DbSet Property:
 Ensure that Farmers and Product classes are correctly defined and referenced in ApplicationDbContext.
 Namespace Issues:
